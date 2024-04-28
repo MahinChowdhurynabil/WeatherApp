@@ -1,0 +1,106 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  display: block;
+  margin: 50px auto;
+  padding: 20px;
+  width: 60%;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.cityInput {
+  padding: 7px;
+  margin: 10px;
+  border: none;
+  font-size: 18px;
+  width: 60%;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0064cf;
+}
+
+.icon img {
+  width: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.description {
+  font-size: 24px;
+  margin: 20px 0px;
+}
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.details > div {
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  min-width: 70px;
+  flex: 1;
+  border-radius: 5px;
+  text-align: center;
+}
+@media (max-with: 768px) {
+  form {
+    flex-direction: column;
+  }
+
+  .cityInput {
+    width: 100%;
+  }
+}
+
+#alart {
+  animation-name: alart;
+  animation-duration: 300ms;
+}
+@keyframes alart {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
